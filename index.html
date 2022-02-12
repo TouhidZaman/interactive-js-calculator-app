@@ -4,12 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/calculator-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Calculator App - by Touhid</title>
 </head>
 <body>
-    <button onclick="hello()">Click me</button>
+    <section id="calculator-section">
+        <h3 class="calculator-title">NT's Calculator</h3>
+        <div class="calculator">
+            <div class="calculator-display">
+                <!-- <input  type="text"> -->
+                <div id="display"></div>
+            </div>
+            <div class="calculator-buttons">
+                <div class="clc-btn clc-btn-operator" onclick="insertMe(event)">C</div>
+                <div class="clc-btn clc-btn-operator" onclick="insertMe(event)">
+                    <i class="fas fa-backspace"></i>
+                </div>
+                <div class="clc-btn clc-btn-operator" onclick="insertMe(event)">
+                    <i class="fas fa-percent"></i>
+                </div>
+                <div class="clc-btn clc-btn-operator" onclick="insertMe(event)">
+                    <i class="fas fa-divide"></i>
+                </div>
+
+                <div class="clc-btn" onclick="insertMe(event)">7</div>
+                <div class="clc-btn" onclick="insertMe(event)">8</div>
+                <div class="clc-btn" onclick="insertMe(event)">9</div>
+                <div class="clc-btn clc-btn-operator" onclick="insertMe(event)">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="clc-btn" onclick="insertMe(event)">4</div>
+                <div class="clc-btn" onclick="insertMe(event)">5</div>
+                <div class="clc-btn" onclick="insertMe(event)">6</div>
+                <div class="clc-btn clc-btn-operator" onclick="insertMe(event)">
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <div class="clc-btn" onclick="insertMe(event)">1</div>
+                <div class="clc-btn" onclick="insertMe(event)">2</div>
+                <div class="clc-btn" onclick="insertMe(event)">3</div>
+                <div class="clc-btn clc-btn-operator" onclick="insertMe(event)">
+                    <i class="fas fa-minus"></i>
+                </div>
+
+                <div class="clc-btn" onclick="insertMe(event)">0</div>
+                <div class="clc-btn" onclick="insertMe(event)">.</div>
+                <div class="clc-btn clc-btn-equal clc-btn-operator" onclick="insertMe(event)">
+                    <!-- <i class="fa-solid fa-equals"></i> -->
+                    <i class="fas fa-equals"></i>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Javascript file for calulate functionality -->
+    <script src="https://kit.fontawesome.com/6076f916b8.js" crossorigin="anonymous"></script>
     <script src="calculate.js"></script>
 </body>
 </html>
